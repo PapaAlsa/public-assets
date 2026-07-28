@@ -1,59 +1,111 @@
-<!-- Tabel Saweran -->
-<table>
-  <thead>
-    <tr>
-      <th>Sawer</th>
-      <th>Siksaan</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><b>1k</b></td>
-      <td>
-        <!-- SEBELUMNYA: src="./trakteer-mobs/01-endermite.webp" -->
-        <!-- SESUDAHNYA (DIPERBAIKI): src="./01-endermite.webp" -->
-        <img src="./01-endermite.webp" width="25" />
-        <img src="./01-endermite.webp" width="25" />
-      </td>
-    </tr>
-    <tr>
-      <td><b>2k</b></td>
-      <td>
-        <img src="./02-zombie.webp" width="20" />
-        <img src="./02-zombie.webp" width="20" />
-      </td>
-    </tr>
-    <tr>
-      <td><b>5k</b></td>
-      <td>
-        <img src="./03-chicken-jockey.webp" width="25" />
-        <img src="./03-chicken-jockey.webp" width="25" />
-      </td>
-    </tr>
-    <tr>
-      <td><b>10k</b></td>
-      <td>
-        <img src="./04-creeper.webp" width="15" />
-        <img src="./04-creeper.webp" width="15" />
-      </td>
-    </tr>
-    <tr>
-      <td><b>20k</b></td>
-      <td>
-        <img src="./05-vindicator.webp" width="20" />
-      </td>
-    </tr>
-    <tr>
-      <td><b>50k</b></td>
-      <td>
-        <img src="./06-charged-creeper.webp" width="19" />
-      </td>
-    </tr>
-    <tr>
-      <td><b>100k</b></td>
-      <td>
-        <img src="./07-warden.webp" width="50" />
-      </td>
-    </tr>
-  </tbody>
-</table>
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      /* Bikin background dasar transparan biar di OBS gak ada kotak putih */
+      body {
+        background-color: transparent;
+        margin: 0;
+        padding: 10px;
+        display: flex;
+        justify-content: flex-start;
+      }
+
+      /* Setingan Utama Tabel (Background gelap, Font, Garis) */
+      table {
+        border-collapse: collapse;
+        background-color: #12151a; /* Warna background gelap persis kayak gambar */
+        color: #ffffff; /* Warna tulisan putih */
+        font-family:
+          "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Font bersih & rapi */
+        border: 1px solid #2b3035; /* Garis luar tabel */
+      }
+
+      /* Setingan jarak (padding) dan garis antar kotak */
+      th,
+      td {
+        border: 1px solid #2b3035; /* Warna garis tengah/pembatas */
+        padding: 15px 30px; /* Jarak antara tulisan/gambar ke garis biar lega */
+        text-align: center;
+        vertical-align: middle;
+      }
+
+      /* Setingan font khusus Header (Sawer & Siksaan) */
+      th {
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      /* Setingan font khusus angka (1k, 2k, dll) */
+      td b {
+        font-size: 17px;
+      }
+
+      /* Setingan gambar biar sejajar dan ada jarak dikit kalau berjejer */
+      img {
+        vertical-align: middle;
+        margin: 0 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Tabel Saweran -->
+    <table>
+      <thead>
+        <tr>
+          <th>Sawer</th>
+          <th>Siksaan</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><b>1k</b></td>
+          <td>
+            <img src="./01-endermite.webp" width="25" />
+            <img src="./01-endermite.webp" width="25" />
+          </td>
+        </tr>
+        <tr>
+          <td><b>2k</b></td>
+          <td>
+            <img src="./02-zombie.webp" width="20" />
+            <img src="./02-zombie.webp" width="20" />
+          </td>
+        </tr>
+        <tr>
+          <td><b>5k</b></td>
+          <td>
+            <img src="./03-chicken-jockey.webp" width="25" />
+            <img src="./03-chicken-jockey.webp" width="25" />
+          </td>
+        </tr>
+        <tr>
+          <td><b>10k</b></td>
+          <td>
+            <img src="./04-creeper.webp" width="15" />
+            <img src="./04-creeper.webp" width="15" />
+          </td>
+        </tr>
+        <tr>
+          <td><b>20k</b></td>
+          <td>
+            <img src="./05-vindicator.webp" width="20" />
+          </td>
+        </tr>
+        <tr>
+          <td><b>50k</b></td>
+          <td>
+            <img src="./06-charged-creeper.webp" width="19" />
+          </td>
+        </tr>
+        <tr>
+          <td><b>100k</b></td>
+          <td>
+            <img src="./07-warden.webp" width="50" />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
